@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Verification - DCAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo dublin college.png" alt="DCAS Logo" class="logo">
+        <h2>Dublin College of Advanced Studies (DCAS)</h2>
+        <h3>Letter Verification</h3>
+        <p>Please enter the Enrolment details:</p>
+
+        <form id="myForm">
+            <input type="text" placeholder="Student ID" required>
+            <input type="text" placeholder="Enrolment ID" required>
+            <input type="text" placeholder="Passport Number" required>
+            <button type="submit">Verify Letter Details</button>
+        </form>
+        <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Хуудас шинэчлэхийг зогсооно
+      window.location.href = "result.html"; // Шинэ хуудас руу үсэрнэ
+    });
+  </script>
+
+        <footer>© 2025</footer>
+    </div>
+</body>
+</html>
